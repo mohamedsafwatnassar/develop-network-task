@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_2x"
+    android:layout_marginTop="@dimen/space_2x"
+    android:layout_marginEnd="@dimen/space_2x"
+    android:layout_marginBottom="@dimen/space_4x"
+    app:cardCornerRadius="@dimen/space_4x"
+    app:cardElevation="@dimen/space_4x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpImages"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:overScrollMode="never" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circleIndicatorImage"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/vpImages"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp" />
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgDiscount"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="-14dp"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/ic_sale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/space_1x"
+                android:layout_marginTop="@dimen/space_2x"
+                android:gravity="center"
+                android:rotation="-45"
+                android:textColor="@color/colorWhite"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="2222" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img1"
+                android:layout_width="25dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/space_2x"
+                android:layout_marginEnd="@dimen/space_1x"
+                android:layout_marginTop="@dimen/space_2x"
+                android:src="@drawable/ic_star_rate"
+                app:layout_constraintEnd_toStartOf="@id/txtHighRate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtHighRate"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/space_2x"
+                android:layout_marginEnd="@dimen/space_2.5x"
+                android:layout_marginTop="@dimen/space_2x"
+                android:gravity="start"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="5.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_2x"
+            android:layout_marginEnd="@dimen/space_1x"
+            android:layout_marginTop="@dimen/space_2x"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/txtPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relImages"
+            tools:text="Mohamed Mohamed Mohamed Mohamed Mohamed Mohamed" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_1x"
+            android:layout_marginEnd="@dimen/space_2x"
+            android:layout_marginTop="@dimen/space_2x"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@id/relImages"
+            tools:text="Mohamed Mohamed Mohamed Mohamed Mohamed Mohamed" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_2x"
+            android:layout_marginEnd="@dimen/space_2x"
+            android:layout_marginTop="@dimen/space_2x"
+            android:layout_marginBottom="@dimen/space_2x"
+            android:maxLines="2"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPrice"
+            tools:text="Mohamed Mohamed Mohamed Mohamed Mohamed Mohamed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

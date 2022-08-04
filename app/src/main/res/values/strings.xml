@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Develop Network Task</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Main Activity -->
+    <string name="retry">Retry</string>
+    <string name="no_internet">No internet connection</string>
+
+    <!-- Login Fragment -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="open_location_settings">Open Settings</string>
+    <string name="need_GPS">Open GPS to Complete Process</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="sign_up_to_continue">Sign up to continue</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="required">Field is required</string>
+    <string name="valid_phone">Please Enter valid phone</string>
+    <string name="should_be_phone_with_11_number">should be phone with 11 number</string>
+
+    <!-- Sign Up Fragment -->
+    <string name="hey_get_on_board">Hey, get on board</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="user_name">User Name</string>
+    <string name="email_address">Email address</string>
+    <string name="validPassword">password should more than 8 chars</string>
+    <string name="search">Search</string>
+    <string name="are_you_new_user">Are you new user?</string>
+
+    <string name="price">%1$s L.E</string>
+    <string name="discount">%1$s </string>
+    <string name="welcome_to_develop_network_task">Welcome To \n Develop Network Task</string>
+    <string name="please_enter_a_valid_email">Please enter a valid email</string>
+    <string name="password_should_be_more_than_8_characters">password should be more than 8 characters</string>
+
+</resources>
